@@ -97,6 +97,9 @@
 		632B28491E9EED2A006FEB47 /* Homepwner */ = {
 			isa = PBXGroup;
 			children = (
+				632B287A1E9EF2AD006FEB47 /* Models */,
+				632B28791E9EF2A2006FEB47 /* Views */,
+				632B28781E9EF294006FEB47 /* Controllers */,
 				632B284A1E9EED2A006FEB47 /* AppDelegate.swift */,
 				632B284C1E9EED2A006FEB47 /* ViewController.swift */,
 				632B284E1E9EED2A006FEB47 /* Main.storyboard */,
@@ -123,6 +126,27 @@
 				632B286C1E9EED2B006FEB47 /* Info.plist */,
 			);
 			path = HomepwnerUITests;
+			sourceTree = "<group>";
+		};
+		632B28781E9EF294006FEB47 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		632B28791E9EF2A2006FEB47 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		632B287A1E9EF2AD006FEB47 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
