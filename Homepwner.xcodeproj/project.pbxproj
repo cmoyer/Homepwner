@@ -99,6 +99,7 @@
 		632B28491E9EED2A006FEB47 /* Homepwner */ = {
 			isa = PBXGroup;
 			children = (
+				632B287F1E9EF6B3006FEB47 /* Stores */,
 				632B287A1E9EF2AD006FEB47 /* Models */,
 				632B28791E9EF2A2006FEB47 /* Views */,
 				632B28781E9EF294006FEB47 /* Controllers */,
@@ -150,6 +151,13 @@
 				632B287D1E9EF3FA006FEB47 /* Item.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		632B287F1E9EF6B3006FEB47 /* Stores */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Stores;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
