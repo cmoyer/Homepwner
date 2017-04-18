@@ -40,13 +40,15 @@ class ItemsViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "UITableViewCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ItemCell", for: indexPath) as! ItemCell
         
         // Set the text on the cell with the description of the item
         let item = itemStore.allItems[indexPath.row]
         
-        cell.textLabel?.text = item.name
-        cell.detailTextLabel?.text = "$\(item.valueInDollars)"
+        // Configure our custom cell
+        cell.nameLabel.text = item.name
+        cell.serialNumberLabel.text = item.serialNumber
+        cell.valueLabel.text = "$\(item.valueInDollars)"
         
         return cell
     }
@@ -59,6 +61,8 @@ class ItemsViewController: UITableViewController {
         let insets = UIEdgeInsets(top: statusBarHeight, left: 0, bottom: 0, right: 0)
         tableView.contentInset = insets
         tableView.scrollIndicatorInsets = insets
+        
+        tableView.rowHeight = 65
     }
     
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
@@ -66,11 +70,25 @@ class ItemsViewController: UITableViewController {
         if editingStyle == .delete {
             let item = itemStore.allItems[indexPath.row]
             
-            // Remove from our item store
-            itemStore.removeItem(item)
+            let title = "Delete \(item.name)?"
+            let message = "Are you sure you want to delete this item?"
             
-            // Also remove the row from our table view
-            tableView.deleteRows(at: [indexPath], with: .automatic)
+            let ac = UIAlertController(title: title, message: message, preferredStyle: .actionSheet)
+            
+            let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+            ac.addAction(cancelAction)
+            
+            let deleteAction = UIAlertAction(title: "Delete", style: .destructive, handler: { (action) -> Void in
+                // Remove from our item store
+                self.itemStore.removeItem(item)
+                
+                // Also remove the row from our table view
+                self.tableView.deleteRows(at: [indexPath], with: .automatic)
+            })
+            ac.addAction(deleteAction)
+            
+            present(ac, animated: true, completion: nil)
+            
         }
     }
     
