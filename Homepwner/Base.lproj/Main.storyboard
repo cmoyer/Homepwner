@@ -57,19 +57,19 @@
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hiI-zf-n6M">
                                             <rect key="frame" x="8" y="8" width="42" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jcO-MA-jv8">
                                             <rect key="frame" x="325" y="22" width="42" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZoV-aj-vze">
-                                            <rect key="frame" x="8" y="41" width="35.5" height="17"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <rect key="frame" x="8" y="41" width="31" height="17"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
                                             <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -79,6 +79,7 @@
                                         <constraint firstAttribute="trailingMargin" secondItem="jcO-MA-jv8" secondAttribute="trailing" id="E0J-k4-KPh"/>
                                         <constraint firstItem="hiI-zf-n6M" firstAttribute="leading" secondItem="rZP-3n-f91" secondAttribute="leadingMargin" id="Uj6-Be-d9H"/>
                                         <constraint firstItem="ZoV-aj-vze" firstAttribute="leading" secondItem="hiI-zf-n6M" secondAttribute="leading" id="a8o-QU-x2V"/>
+                                        <constraint firstItem="ZoV-aj-vze" firstAttribute="top" secondItem="hiI-zf-n6M" secondAttribute="bottom" constant="12" id="omp-Aw-4U2"/>
                                         <constraint firstItem="jcO-MA-jv8" firstAttribute="centerY" secondItem="rZP-3n-f91" secondAttribute="centerY" id="pUW-cx-t0k"/>
                                         <constraint firstAttribute="bottom" secondItem="ZoV-aj-vze" secondAttribute="bottom" constant="6.5" id="yeQ-9b-RzX"/>
                                     </constraints>
