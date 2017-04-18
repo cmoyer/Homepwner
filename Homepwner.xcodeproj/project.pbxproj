@@ -17,6 +17,7 @@
 		632B287E1E9EF3FA006FEB47 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632B287D1E9EF3FA006FEB47 /* Item.swift */; };
 		632B28811E9EF722006FEB47 /* ItemStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632B28801E9EF722006FEB47 /* ItemStore.swift */; };
 		632B28831EA6C621006FEB47 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632B28821EA6C621006FEB47 /* ItemCell.swift */; };
+		632B28851EA6D10E006FEB47 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632B28841EA6D10E006FEB47 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		632B287D1E9EF3FA006FEB47 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		632B28801E9EF722006FEB47 /* ItemStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemStore.swift; sourceTree = "<group>"; };
 		632B28821EA6C621006FEB47 /* ItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
+		632B28841EA6D10E006FEB47 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +141,7 @@
 			children = (
 				632B287B1E9EF330006FEB47 /* ItemsViewController.swift */,
 				632B28821EA6C621006FEB47 /* ItemCell.swift */,
+				632B28841EA6D10E006FEB47 /* DetailViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -306,6 +309,7 @@
 				632B287C1E9EF330006FEB47 /* ItemsViewController.swift in Sources */,
 				632B287E1E9EF3FA006FEB47 /* Item.swift in Sources */,
 				632B28811E9EF722006FEB47 /* ItemStore.swift in Sources */,
+				632B28851EA6D10E006FEB47 /* DetailViewController.swift in Sources */,
 				632B284B1E9EED2A006FEB47 /* AppDelegate.swift in Sources */,
 				632B28831EA6C621006FEB47 /* ItemCell.swift in Sources */,
 			);
