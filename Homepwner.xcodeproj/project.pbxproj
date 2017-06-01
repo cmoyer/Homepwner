@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		631F912F1EDDC08700542616 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631F912E1EDDC08700542616 /* CustomTextField.swift */; };
+		631F91311EE0D87300542616 /* ImageStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631F91301EE0D87300542616 /* ImageStore.swift */; };
 		632B284B1E9EED2A006FEB47 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632B284A1E9EED2A006FEB47 /* AppDelegate.swift */; };
 		632B28501E9EED2A006FEB47 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 632B284E1E9EED2A006FEB47 /* Main.storyboard */; };
 		632B28521E9EED2A006FEB47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 632B28511E9EED2A006FEB47 /* Assets.xcassets */; };
@@ -40,6 +41,7 @@
 
 /* Begin PBXFileReference section */
 		631F912E1EDDC08700542616 /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		631F91301EE0D87300542616 /* ImageStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageStore.swift; sourceTree = "<group>"; };
 		632B28471E9EED2A006FEB47 /* Homepwner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Homepwner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		632B284A1E9EED2A006FEB47 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		632B284F1E9EED2A006FEB47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -168,6 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				632B28801E9EF722006FEB47 /* ItemStore.swift */,
+				631F91301EE0D87300542616 /* ImageStore.swift */,
 			);
 			path = Stores;
 			sourceTree = "<group>";
@@ -312,6 +315,7 @@
 				631F912F1EDDC08700542616 /* CustomTextField.swift in Sources */,
 				632B287C1E9EF330006FEB47 /* ItemsViewController.swift in Sources */,
 				632B287E1E9EF3FA006FEB47 /* Item.swift in Sources */,
+				631F91311EE0D87300542616 /* ImageStore.swift in Sources */,
 				632B28811E9EF722006FEB47 /* ItemStore.swift in Sources */,
 				632B28851EA6D10E006FEB47 /* DetailViewController.swift in Sources */,
 				632B284B1E9EED2A006FEB47 /* AppDelegate.swift in Sources */,
