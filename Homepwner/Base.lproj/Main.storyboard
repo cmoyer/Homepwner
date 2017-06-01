@@ -23,7 +23,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="65"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jxu-MB-Mxu" id="rZP-3n-f91">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="64.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hiI-zf-n6M">
@@ -156,17 +156,37 @@
                                         </subviews>
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="Date Created" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n7I-zR-W5w">
-                                        <rect key="frame" x="0.0" y="114" width="343" height="473"/>
+                                        <rect key="frame" x="0.0" y="114" width="343" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="248" verticalCompressionResistancePriority="749" translatesAutoresizingMaskIntoConstraints="NO" id="Pdm-GK-BdH">
+                                        <rect key="frame" x="0.0" y="142.5" width="343" height="392.5"/>
+                                    </imageView>
+                                    <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="78u-1h-iqT">
+                                        <rect key="frame" x="0.0" y="543" width="343" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="xAM-0a-7cR"/>
+                                        </constraints>
+                                        <items>
+                                            <barButtonItem systemItem="camera" id="dGZ-wq-rYj">
+                                                <connections>
+                                                    <action selector="takePicture:" destination="vwO-C3-0Av" id="Q9l-I7-77A"/>
+                                                </connections>
+                                            </barButtonItem>
+                                        </items>
+                                    </toolbar>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="78u-1h-iqT" secondAttribute="bottom" id="A8L-sI-fMI"/>
                                     <constraint firstItem="pft-NO-424" firstAttribute="leading" secondItem="r4T-tv-oOO" secondAttribute="leading" id="B5e-u3-JoU"/>
+                                    <constraint firstAttribute="trailing" secondItem="78u-1h-iqT" secondAttribute="trailing" id="Ba9-Gt-ZyT"/>
                                     <constraint firstItem="skd-8m-Evw" firstAttribute="leading" secondItem="pft-NO-424" secondAttribute="leading" id="XEG-Hr-QV0"/>
+                                    <constraint firstItem="78u-1h-iqT" firstAttribute="leading" secondItem="Pdx-Rd-yH4" secondAttribute="leading" id="dKd-9e-LAf"/>
                                     <constraint firstItem="Xaf-aU-Ckl" firstAttribute="leading" secondItem="ckZ-4Z-kXc" secondAttribute="leading" id="joK-mP-Ntc"/>
                                     <constraint firstItem="PWf-EI-on9" firstAttribute="leading" secondItem="Xaf-aU-Ckl" secondAttribute="leading" id="r6z-Dj-Mbm"/>
+                                    <constraint firstItem="78u-1h-iqT" firstAttribute="top" secondItem="Pdm-GK-BdH" secondAttribute="bottom" constant="8" id="yxg-K9-2Vc"/>
                                 </constraints>
                             </stackView>
                         </subviews>
@@ -175,7 +195,7 @@
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="Pdx-Rd-yH4" secondAttribute="trailing" id="Cf6-h3-fGM"/>
                             <constraint firstItem="Pdx-Rd-yH4" firstAttribute="top" secondItem="M75-CG-3eI" secondAttribute="bottom" constant="8" id="PXu-to-Vcl"/>
-                            <constraint firstItem="lNd-u8-LoC" firstAttribute="top" secondItem="Pdx-Rd-yH4" secondAttribute="bottom" constant="8" id="kja-lu-yfE"/>
+                            <constraint firstItem="lNd-u8-LoC" firstAttribute="top" secondItem="Pdx-Rd-yH4" secondAttribute="bottom" constant="8" id="edE-Ix-tLg"/>
                             <constraint firstAttribute="leadingMargin" secondItem="Pdx-Rd-yH4" secondAttribute="leading" id="q6g-m1-8h6"/>
                         </constraints>
                         <connections>
@@ -184,6 +204,7 @@
                     </view>
                     <connections>
                         <outlet property="dateLabel" destination="n7I-zR-W5w" id="aCx-3r-7VR"/>
+                        <outlet property="imageView" destination="Pdm-GK-BdH" id="JrM-E2-Vvr"/>
                         <outlet property="nameField" destination="skd-8m-Evw" id="d3u-Na-EdV"/>
                         <outlet property="serialNumberField" destination="pft-NO-424" id="pGj-DG-s9o"/>
                         <outlet property="valueField" destination="r4T-tv-oOO" id="MZz-Tz-nZj"/>
