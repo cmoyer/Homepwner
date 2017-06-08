@@ -24,6 +24,12 @@ class ItemStore {
         return newItem
     }
     
+    init() {
+        if let archivedItems = NSKeyedUnarchiver.unarchiveObject(withFile: itemArchiveURL.path) as? [Item] {
+            allItems = archivedItems
+        }
+    }
+    
     func removeItem(_ item: Item) {
         if let index = allItems.index(of: item) {
             allItems.remove(at: index)
