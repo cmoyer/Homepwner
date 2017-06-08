@@ -44,4 +44,9 @@ class ItemStore {
         // Insert the item back into the array at the new location
         allItems.insert(movedItem, at: toIndex)
     }
+    
+    func saveChanges() -> Bool {
+        print("Saving items to: \(itemArchiveURL.path)")
+        return NSKeyedArchiver.archiveRootObject(allItems, toFile: itemArchiveURL.path)
+    }
 }
