@@ -67,9 +67,15 @@ class DetailViewController: UIViewController, UITextFieldDelegate, UINavigationC
         dismiss(animated: true, completion: nil)
         
         // Get the selected image from the info dictionary
-        if let selectedImage = info[UIImagePickerControllerOriginalImage] as? UIImage {
-            imageView.image = selectedImage
+        if let image = info[UIImagePickerControllerOriginalImage] as? UIImage {
+            // Store the image in the ImageStore for the item's key
+            imageStore.setImage(image, forKey: item.itemKey)
+            
+            // Put the image on the screen in our image view
+            imageView.image = image
         }
+        
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -79,6 +85,13 @@ class DetailViewController: UIViewController, UITextFieldDelegate, UINavigationC
         serialNumberField.text = item.serialNumber
         valueField.text = numberFormatter.string(from: NSNumber(value: item.valueInDollars))
         dateLabel.text = dateFormatter.string(from: item.dateCreated)
+        
+        // Get the item key
+        let key = item.itemKey
+        
+        // If there is an associated image with the selected item, display it on the image view
+        let imageToDisplay = imageStore.image(forKey: key)
+        imageView.image = imageToDisplay
     }
     
     override func viewDidLoad() {
